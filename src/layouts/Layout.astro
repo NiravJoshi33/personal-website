@@ -1,6 +1,7 @@
 ---
 import "../global.css";
 import { siteInfo } from "../lib/data";
+import Navbar from "./Navbar.astro";
 ---
 
 <!doctype html>
@@ -38,6 +39,7 @@ import { siteInfo } from "../lib/data";
     <meta name="og:site_name" content={siteInfo.name} />
   </head>
   <body>
+    <Navbar />
     <slot />
   </body>
 </html>
