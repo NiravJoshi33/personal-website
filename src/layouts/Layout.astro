@@ -2,6 +2,7 @@
 import "../global.css";
 import { siteInfo } from "../lib/data";
 import Navbar from "./Navbar.astro";
+import { Tooltips } from "astro-tooltips";
 ---
 
 <!doctype html>
@@ -39,6 +40,7 @@ import Navbar from "./Navbar.astro";
     <meta name="og:site_name" content={siteInfo.name} />
   </head>
   <body>
+    <Tooltips interactive={false} />
     <Navbar />
     <slot />
   </body>
