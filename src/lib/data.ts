@@ -55,4 +55,12 @@ export const techLogos = [
     name: "AstroJs",
     imageName: "astro.svg",
   },
+  {
+    name: "Gemini",
+    imageName: "gemini.svg",
+  },
+  {
+    name: "Cloudflare",
+    imageName: "cloudflare.svg",
+  },
 ];
