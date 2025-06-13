@@ -1,11 +1,90 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import devEnvironment from "../assets/dev-environment.svg";
+import meditation from "../assets/meditation.svg";
+import music from "../assets/music.svg";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="w-full h-full flex flex-col justify-around items-center gap-12">
+    <section
+      class="relative w-full h-full flex flex-row justify-around items-center"
+    >
+      <div class="hero-content relative w-[800px]">
+        <h1 class="text-center text-4xl font-semibold mb-12">
+          Hey! I'm Nirav Joshi
+        </h1>
+        <p class="text-center text-lg font-light mb-4">
+          <span class="font-semibold">Self-taught Software Engineer</span> with <span
+            class="font-semibold"
+            >1+ years
+          </span> of experience in developing robust, efficient, and scalable web
+          applications. Driven by my passion for building products that make a difference,
+          I build simple systems that just work.
+        </p>
+
+        <p class="text-center text-lg font-light mb-4">
+          I'm currently working as a <span class="font-semibold"
+            >Software Developer - R&D Products</span
+          > at <span class="font-semibold">CodeCrunch Techlabs</span>, where I'm
+          building a simple yet powerful <a
+            href="https://bemysearch.com"
+            target="_blank"
+            class="font-semibold">Product Recommendation Engine</a
+          >
+        </p>
+      </div>
+
+      <div
+        class="hero-image flex flex-col gap-4 w-[25%] items-center justify-center"
+      >
+        <img
+          src={devEnvironment.src}
+          alt="Dev Environment"
+          width="150"
+          height="150"
+          class="self-start"
+        />
+        <img
+          src={meditation.src}
+          alt="Meditation"
+          width="150"
+          height="150"
+          class="self-end"
+        />
+        <img
+          src={music.src}
+          alt="Music"
+          width="150"
+          height="150"
+          class="self-start"
+        />
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  .hero-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(
+      circle at center,
+      rgba(173, 216, 230, 0.2) 0%,
+      rgba(144, 238, 144, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .hero-content h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+</style>

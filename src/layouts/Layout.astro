@@ -1,22 +1,61 @@
+---
+import "../global.css";
+import { siteInfo } from "../lib/data";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteInfo.name}</title>
+    <meta name="description" content={siteInfo.description} />
+    <meta name="author" content={siteInfo.author} />
+    <meta name="author-email" content={siteInfo.authorEmail} />
+    <meta
+      name="keywords"
+      content="Nirav Joshi, Nirav, Joshi, Nirav Joshi's Personal Website, Nirav Joshi's Portfolio, Nirav Joshi's Blog, Nirav Joshi's Projects, Nirav Joshi's Skills, Nirav Joshi's Experience, Nirav Joshi's Education, Nirav Joshi's Contact, Nirav Joshi's Resume, Nirav Joshi's LinkedIn, Nirav Joshi's GitHub, Nirav Joshi's Twitter, Nirav Joshi's Facebook, Nirav Joshi's Instagram, Nirav Joshi's YouTube, Nirav Joshi's TikTok, Nirav Joshi's Reddit, Nirav Joshi's Pinterest, Nirav Joshi's LinkedIn, Nirav Joshi's GitHub, Nirav Joshi's Twitter, Nirav Joshi's Facebook, Nirav Joshi's Instagram, Nirav Joshi's YouTube, Nirav Joshi's TikTok, Nirav Joshi's Reddit, Nirav Joshi's Pinterest"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="og:title" content={siteInfo.name} />
+    <meta name="og:description" content={siteInfo.description} />
+    <meta name="og:url" content={siteInfo.url} />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content={siteInfo.name} />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
