@@ -33,27 +33,38 @@ import music from "../assets/music.svg";
   <div
     class="hero-image flex flex-col gap-4 w-[25%] items-center justify-center"
   >
-    <img
-      src={devEnvironment.src}
-      alt="Dev Environment"
-      width="150"
-      height="150"
-      class="self-start"
-    />
-    <img
-      src={meditation.src}
-      alt="Meditation"
-      width="150"
-      height="150"
-      class="self-end"
-    />
-    <img
-      src={music.src}
-      alt="Music"
-      width="150"
-      height="150"
-      class="self-start"
-    />
+    <div class="flex flex-row gap-4 items-center">
+      <img
+        src={devEnvironment.src}
+        alt="Dev Environment"
+        width="150"
+        height="150"
+        class="self-start"
+      />
+      <p class="text-4xl font-bold uppercase text-green-600/5">Coding</p>
+    </div>
+
+    <div class="flex flex-row-reverse gap-4 items-center">
+      <img
+        src={meditation.src}
+        alt="Meditation"
+        width="150"
+        height="150"
+        class="self-end"
+      />
+      <p class="text-4xl font-bold uppercase text-green-600/5">Meditation</p>
+    </div>
+
+    <div class="flex flex-row gap-4 items-center">
+      <img
+        src={music.src}
+        alt="Music"
+        width="150"
+        height="150"
+        class="self-start"
+      />
+      <p class="text-4xl font-bold uppercase text-green-600/5">Music</p>
+    </div>
   </div>
 </section>
 

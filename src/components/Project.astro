@@ -1,1 +1,71 @@
-<div class="w-full min-h-screen bg-green-600"></div>
+---
+interface Props {
+  title: string;
+  description: string;
+  imageUrl?: string;
+  technologies: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+}
+
+const { title, description, imageUrl, technologies, liveUrl, githubUrl } =
+  Astro.props;
+---
+
+<div
+  class="w-full bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+>
+  {
+    imageUrl && (
+      <div class="w-full h-48 overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={title}
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+    )
+  }
+
+  <div class="p-6">
+    <h3 class="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+    <p class="text-gray-600 mb-4">{description}</p>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+      {
+        technologies.map((tech) => (
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
+            {tech}
+          </span>
+        ))
+      }
+    </div>
+
+    <div class="flex gap-4">
+      {
+        liveUrl && (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green-600 hover:text-green-700 font-medium"
+          >
+            Live Demo →
+          </a>
+        )
+      }
+      {
+        githubUrl && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-gray-800 font-medium"
+          >
+            GitHub →
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>
