@@ -70,8 +70,8 @@ import music from "../assets/music.svg";
     transform: translate(-50%, -50%);
     background-image: radial-gradient(
       circle at center,
-      rgba(173, 216, 230, 0.5) 0%,
-      rgba(144, 238, 144, 0.5) 50%,
+      rgba(173, 216, 230, 0.3) 0%,
+      rgba(144, 238, 144, 0.3) 50%,
       rgba(255, 255, 255, 0) 100%
     );
     filter: blur(100px);
@@ -81,24 +81,5 @@ import music from "../assets/music.svg";
 
   .hero-content h1 {
     font-family: "Montserrat", sans-serif;
-  }
-
-  .hero-image::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 800px;
-    height: 600px;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(
-      circle at center,
-      rgba(173, 216, 230, 0.5) 0%,
-      rgba(72, 170, 144, 0.5) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    filter: blur(100px);
-    pointer-events: none;
-    z-index: -1;
   }
 </style>
