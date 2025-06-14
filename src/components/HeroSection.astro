@@ -31,40 +31,31 @@ import music from "../assets/music.svg";
   </div>
 
   <div
-    class="hero-image flex flex-col gap-4 w-[25%] items-center justify-center"
+    class="hero-image relative flex flex-col gap-4 w-[25%] items-center justify-center"
   >
-    <div class="flex flex-row gap-4 items-center">
-      <img
-        src={devEnvironment.src}
-        alt="Dev Environment"
-        width="150"
-        height="150"
-        class="self-start"
-      />
-      <p class="text-4xl font-bold uppercase text-green-600/5">Coding</p>
-    </div>
+    <img
+      src={devEnvironment.src}
+      alt="Dev Environment"
+      width="150"
+      height="150"
+      class="self-start"
+    />
 
-    <div class="flex flex-row-reverse gap-4 items-center">
-      <img
-        src={meditation.src}
-        alt="Meditation"
-        width="150"
-        height="150"
-        class="self-end"
-      />
-      <p class="text-4xl font-bold uppercase text-green-600/5">Meditation</p>
-    </div>
+    <img
+      src={meditation.src}
+      alt="Meditation"
+      width="150"
+      height="150"
+      class="self-end"
+    />
 
-    <div class="flex flex-row gap-4 items-center">
-      <img
-        src={music.src}
-        alt="Music"
-        width="150"
-        height="150"
-        class="self-start"
-      />
-      <p class="text-4xl font-bold uppercase text-green-600/5">Music</p>
-    </div>
+    <img
+      src={music.src}
+      alt="Music"
+      width="150"
+      height="150"
+      class="self-start"
+    />
   </div>
 </section>
 
@@ -79,8 +70,8 @@ import music from "../assets/music.svg";
     transform: translate(-50%, -50%);
     background-image: radial-gradient(
       circle at center,
-      rgba(173, 216, 230, 0.2) 0%,
-      rgba(144, 238, 144, 0.2) 50%,
+      rgba(173, 216, 230, 0.5) 0%,
+      rgba(144, 238, 144, 0.5) 50%,
       rgba(255, 255, 255, 0) 100%
     );
     filter: blur(100px);
@@ -90,5 +81,24 @@ import music from "../assets/music.svg";
 
   .hero-content h1 {
     font-family: "Montserrat", sans-serif;
+  }
+
+  .hero-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(
+      circle at center,
+      rgba(173, 216, 230, 0.5) 0%,
+      rgba(72, 170, 144, 0.5) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: -1;
   }
 </style>
