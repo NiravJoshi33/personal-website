@@ -13,5 +13,10 @@
     "astro": "^5.9.2",
     "astro-tooltips": "^0.6.2",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.49",
+    "@iconify-json/mdi": "^1.2.3",
+    "astro-icon": "^1.1.5"
   }
 }
