@@ -63,4 +63,16 @@ export const techLogos = [
     name: "Cloudflare",
     imageName: "cloudflare.svg",
   },
+  {
+    name: "Docker",
+    imageName: "docker.svg",
+  },
+  {
+    name: "Slack",
+    imageName: "slack.svg",
+  },
+  {
+    name: "Google Sheets",
+    imageName: "google_sheets.svg",
+  },
 ];
