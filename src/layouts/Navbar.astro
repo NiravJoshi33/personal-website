@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
+import { siteInfo } from "../lib/data";
 ---
 
 <nav
@@ -18,8 +18,17 @@ import { Icon } from "astro-icon/components";
     <a
       href="#projects"
       class="text-sm font-light hover:font-medium transition-colors duration-200"
+      target="_blank"
       >Projects</a
     >
+
+
+    <a
+      href={siteInfo.blogUrl}
+      class="text-sm font-light hover:font-medium transition-colors duration-200"
+      >Blog</a
+    >
+
     <a
       href="mailto:niravjoshi3000@gmail.com"
       class="text-sm font-light hover:font-medium transition-colors duration-200"

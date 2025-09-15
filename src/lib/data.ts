@@ -4,6 +4,7 @@ export const siteInfo = {
   url: "https://niravjoshi.dev",
   author: "Nirav Joshi",
   authorEmail: "niravjoshi30@gmail.com",
+  blogUrl: "https://blog.niravjoshi.dev",
 };
 
 export const techLogos = [
