@@ -1,0 +1,222 @@
+{
+  "basics": {
+    "name": "Nirav Joshi",
+    "label": "Building Simple Systems That Just Work! | Web3 & AI",
+    "image": "/me.jpg",
+    "email": "niravjoshi3000@gmail.com",
+    "url": "https://niravjoshi.dev",
+    "summary": "Full-Stack Developer with experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Passionate about building simple, efficient systems that make a difference.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "niravjoshi3",
+        "url": "https://linkedin.com/in/niravjoshi3/?skipRedirect=true"
+      },
+      {
+        "network": "X",
+        "username": "NiravJ3",
+        "url": "https://x.com/NiravJ3"
+      },
+      {
+        "network": "GitHub",
+        "username": "NiravJoshi33",
+        "url": "https://github.com/NiravJoshi33"
+      },
+      {
+        "network": "Telegram",
+        "username": "NJonBlockchain",
+        "url": "https://t.me/NJonBlockchain"
+      }
+    ]
+  },
+  "volunteer": [],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "projects": [
+    {
+      "name": "SeedPay",
+      "isActive": true,
+      "description": "Payments Protocol for BitTorrent Networks. Seeders earn crypto for seeding content while leechers pay using stablecoins or ratio credits.",
+      "highlights": ["BitTorrent", "Cryptocurrency", "Payments Protocol"],
+      "github": "https://github.com/NiravJoshi33/seedpay"
+    },
+    {
+      "name": "Testship",
+      "isActive": true,
+      "description": "CLI tool for testing Anchor Programs without writing tests. Parses IDL and generates an interactive UI to run transactions with automatic PDA calculations.",
+      "highlights": ["Anchor Programs", "Solana", "CLI Tool", "Testing"],
+      "url": "https://www.testship.xyz/",
+      "github": "https://github.com/blockchain-hq/testship",
+      "npm": "https://www.npmjs.com/package/@blockchain-hq/testship"
+    },
+    {
+      "name": "x402test",
+      "isActive": true,
+      "description": "Testing infrastructure for x402 compatible clients and servers. Includes a testing library and mock server for rapid development.",
+      "highlights": ["x402 Protocol", "Testing Library", "Mock Server"],
+      "url": "https://x402test.testship.xyz/",
+      "github": "https://github.com/blockchain-hq/x402test"
+    },
+    {
+      "name": "SMBMarket",
+      "isActive": true,
+      "description": "Aggregator & Dashboard for Business Acquisition Marketplace",
+      "highlights": ["Full-Stack Development", "Dashboard", "AI"],
+      "url": "https://smbmarket.com/"
+    },
+    {
+      "name": "Pocket-Nodes",
+      "isActive": true,
+      "description": "n8n nodes for integrating x402 compatibility into existing workflows. Includes client, server, wallet, and mock server nodes.",
+      "highlights": [
+        "n8n",
+        "x402 Protocol",
+        "Automation",
+        "Workflow Integration"
+      ],
+      "url": "https://pocket-nodes.testship.xyz/",
+      "github": "https://github.com/blockchain-hq/x402-pocket-nodes"
+    },
+    {
+      "name": "solana-test-wallets",
+      "isActive": true,
+      "description": "Lightweight wallet management library for Solana testing. Simplifies wallet creation, funding, and token management for local development.",
+      "highlights": ["Solana", "Testing", "Wallet Management", "TypeScript"],
+      "github": "https://github.com/blockchain-hq/solana-test-wallets",
+      "npm": "https://www.npmjs.com/package/solana-test-wallets"
+    }
+  ],
+  "work": [
+    {
+      "name": "BlockchainHQ",
+      "position": "Lead Engineer",
+      "startDate": "2025-09-01",
+      "endDate": null,
+      "summary": "Leading the development of BlockchainHQ - Homebase for Web3 Builders. It's a unified platform that accelerates the builder's web3 journey by aggregating all the learning and earning opportunities in one place.",
+      "highlights": ["Web3", "Platform Development", "Leadership"]
+    },
+    {
+      "name": "CodeCrunch Techlabs",
+      "position": "Software Developer - Product R&D",
+      "startDate": "2024-03-01",
+      "endDate": null,
+      "summary": "Drive innovation as a Product R&D Software Developer, specializing in developing non-traditional solutions across diverse technological domains. Conceptualize, build, and deploy innovative products that solve real-world problems.",
+      "highlights": ["Product Development", "R&D", "Full-Stack Development"]
+    },
+    {
+      "name": "CodeCrunch Techlabs",
+      "position": "Software Development Intern",
+      "startDate": "2023-11-01",
+      "endDate": "2024-02-01",
+      "summary": "Dedicated significant time and effort to learning coding and development skills, coming from a non-CS background. This journey was both challenging and rewarding as I transitioned into software development.",
+      "highlights": ["Learning", "Full-Stack Development", "Career Transition"]
+    },
+    {
+      "name": "Various Companies",
+      "position": "Mechanical/Mechatronics Engineer",
+      "startDate": "2014-12-01",
+      "endDate": "2023-11-01",
+      "summary": "Worked in mechanical engineering and product design roles, specializing in autonomous mobile robots, automation systems, and product development. Gained extensive experience in CAD modeling, engineering simulations, and project management before transitioning to software development.",
+      "highlights": ["Product Design", "Robotics", "Project Management"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Web development", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Web development", "Frontend", "Responsive Design"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Web development", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": ["Database", "SQL", "Backend"]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Version control", "Collaboration", "Source code"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": ["Version control", "Collaboration", "Source code", "Git"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Gujarati",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Web3 & Blockchain",
+      "keywords": ["Solana", "Anchor Programs", "Cryptocurrency"]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "keywords": ["Artificial Intelligence", "Innovation"]
+    }
+  ],
+  "references": []
+}

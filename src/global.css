@@ -1,6 +1,0 @@
-@import "tailwindcss";
-
-.tippy-box[data-theme="default"] {
-  font-weight: lighter;
-  font-size: 0.75rem;
-}

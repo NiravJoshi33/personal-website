@@ -1,22 +1,18 @@
 {
-  "name": "personal-website",
+  "name": "minimalist-portfolio-json",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.10",
-    "astro": "^5.13.7",
-    "astro-tooltips": "^0.6.2",
-    "tailwindcss": "^4.1.10"
-  },
-  "devDependencies": {
-    "@iconify-json/lucide": "^1.2.49",
-    "@iconify-json/mdi": "^1.2.3",
-    "astro-icon": "^1.1.5"
+    "@astrojs/check": "0.4.1",
+    "astro": "4.3.2",
+    "hotkeypad": "0.1.0",
+    "typescript": "5.3.3"
   }
 }

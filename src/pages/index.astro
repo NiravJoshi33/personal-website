@@ -1,16 +1,40 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import HeroSection from "../components/HeroSection.astro";
-import ProjectSection from "../components/ProjectSection.astro";
+import Layout from "@/layouts/Layout.astro"
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+
+import { basics } from "@cv"
+const { name, label } = basics
 ---
 
-<Layout>
-  <main
-    class="w-full h-min-screen flex flex-col justify-center items-center gap-12"
-  >
-    <HeroSection />
-    <ProjectSection />
+<Layout title={`Portfolio of ${name} - ${label}`}>
+  <main>
+    <Hero />
+    <About />
+    <Projects />
+    <Experience />
+    <Skills />
   </main>
+
+  <KeyboardManager />
 </Layout>
 
-<style></style>
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>
