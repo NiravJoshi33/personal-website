@@ -123,16 +123,6 @@
   ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend"]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend", "Responsive Design"]
-    },
-    {
       "name": "JavaScript",
       "level": "Master",
       "keywords": ["Web development", "Frontend", "Backend", "Fullstack"]
@@ -163,19 +153,24 @@
       "keywords": ["Web development", "Backend", "JavaScript", "Server"]
     },
     {
-      "name": "MySQL",
+      "name": "PostgreSQL",
       "level": "Advanced",
       "keywords": ["Database", "SQL", "Backend"]
     },
     {
-      "name": "Git",
+      "name": "Python",
       "level": "Advanced",
-      "keywords": ["Version control", "Collaboration", "Source code"]
+      "keywords": ["AI", "Machine Learning", "Data Science"]
     },
     {
-      "name": "GitHub",
-      "level": "Advanced",
-      "keywords": ["Version control", "Collaboration", "Source code", "Git"]
+      "name": "Svelte",
+      "level": "Beginner",
+      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Rust",
+      "level": "Beginner",
+      "keywords": ["Blockchain", "Smart Contracts", "Rust"]
     },
     {
       "name": "Next.js",
