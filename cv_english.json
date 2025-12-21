@@ -1,16 +1,16 @@
 {
   "basics": {
     "name": "Nirav Joshi",
-    "label": "Building Simple Systems That Just Work! | Web3 & AI",
+    "label": "Building Simple Systems That Just Work!",
     "image": "/me.jpg",
     "email": "niravjoshi3000@gmail.com",
     "url": "https://niravjoshi.dev",
-    "summary": "Full-Stack Developer with experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Passionate about building simple, efficient systems that make a difference.",
+    "summary": "A self-taught Full-Stack Developer with more than 2 years of experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Passionate about building simple, efficient systems that make a difference.",
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "niravjoshi3",
-        "url": "https://linkedin.com/in/niravjoshi3/?skipRedirect=true"
+        "url": "https://linkedin.com/in/niravjoshi3"
       },
       {
         "network": "X",
@@ -64,6 +64,14 @@
       "description": "Aggregator & Dashboard for Business Acquisition Marketplace",
       "highlights": ["Full-Stack Development", "Dashboard", "AI"],
       "url": "https://smbmarket.com/"
+    },
+    {
+      "name": "BlockchainHQ",
+      "isActive": true,
+      "description": "Homebase for Web3 Builders. It's a unified platform that accelerates the builder's web3 journey by aggregating all the learning and earning opportunities in one place.",
+      "highlights": ["Web3", "Platform Development", "Leadership"],
+      "url": "https://blockchainhq.xyz/",
+      "github": "https://github.com/blockchain-hq"
     },
     {
       "name": "Pocket-Nodes",
@@ -187,6 +195,11 @@
       "name": "React",
       "level": "Advanced",
       "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Solana",
+      "level": "Advanced",
+      "keywords": ["Blockchain", "Smart Contracts", "Solana"]
     }
   ],
   "languages": [
