@@ -11,6 +11,8 @@ export interface CV {
   interests: Array<Interests>
   references: Array<References>
   projects: Array<Projects>
+  educationalContent?: Array<EducationalContent>
+  speaking?: Array<Speaking>
 }
 
 interface Basics {
@@ -143,3 +145,20 @@ interface References {
 }
 
 type Highlight = Array<String>
+
+interface EducationalContent {
+  name: string
+  description: string
+  highlights: Highlight
+  url: string
+  type: string
+}
+
+interface Speaking {
+  title: string
+  institution: string
+  location: string
+  date: DateStr
+  type: string
+  image?: string
+}

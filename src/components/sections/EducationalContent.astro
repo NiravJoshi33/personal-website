@@ -1,0 +1,232 @@
+---
+import YouTube from "@/icons/YouTube.astro"
+import Section from "../Section.astro"
+
+import { educationalContent, speaking } from "@cv"
+---
+
+<Section title="Education & Community">
+  <div class="content-grid">
+    <div class="content-column">
+      <h3>Technical Content</h3>
+      <ul>
+        {
+          educationalContent?.map(
+            ({ url, description, highlights, name, type }) => {
+              return (
+                <li>
+                  <article>
+                    <header>
+                      <h4>
+                        <a href={url} target="_blank" title={`View ${name}`}>
+                          {name}
+                        </a>
+                        {type === "YouTube" && (
+                          <a
+                            class="youtube-link"
+                            href={url}
+                            target="_blank"
+                            title={`View ${name} on YouTube`}
+                          >
+                            <YouTube />
+                          </a>
+                        )}
+                      </h4>
+                      <p>{description}</p>
+                    </header>
+                    <footer>
+                      {highlights.map((highlight) => {
+                        return <span>{highlight}</span>
+                      })}
+                    </footer>
+                  </article>
+                </li>
+              )
+            }
+          )
+        }
+      </ul>
+    </div>
+    <div class="content-column">
+      <h3>Speaking</h3>
+      <ul class="speaking-list">
+        {
+          speaking?.map(
+            ({ title, institution, location, date, image }) => {
+              const eventDate = new Date(date)
+              const formattedDate = eventDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })
+
+              return (
+                <li>
+                  <article>
+                    <header>
+                      <h4>{title}</h4>
+                      <p class="institution">{institution}</p>
+                      <p class="location">{location}</p>
+                      <time 
+                        datetime={date}
+                        data-title={date}>
+                        {formattedDate}
+                      </time>
+                    </header>
+                    {image && (
+                      <figure>
+                        <img src={image} alt={`${title} at ${institution}`} />
+                      </figure>
+                    )}
+                  </article>
+                </li>
+              )
+            }
+          )
+        }
+      </ul>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .content-column h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2e2f31;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px;
+  }
+
+  .speaking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .speaking-list article {
+    border-radius: 8px;
+    border: 1px solid #2e2f31;
+    background: #d6dbd9;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .speaking-list article h4 {
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .speaking-list article .institution {
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  .speaking-list article .location {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  .speaking-list article time {
+    font-size: 0.7rem;
+    color: #2e2f31;
+    margin-top: 4px;
+  }
+
+  .speaking-list figure {
+    margin: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #2e2f31;
+  }
+
+  .speaking-list figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  article {
+    border-radius: 8px;
+    border: 1px solid #2e2f31;
+    background: #d6dbd9;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+  }
+
+  article header {
+    flex: 1;
+  }
+
+  article h4 {
+    margin-bottom: 4px;
+  }
+
+  article a {
+    color: #2e2f31;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+
+  footer span {
+    border-radius: 6px;
+    background: #fff;
+    color: #2e2f31;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .youtube-link {
+    margin-left: 5px;
+  }
+
+  @media (width <= 700px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+
+    ul {
+      margin-inline: 0px;
+    }
+
+    article {
+      border: 1px solid #2e2f31;
+      background: #d6dbd9;
+      box-shadow: 0 1px 1px #d6dbd9;
+    }
+  }
+</style>
+

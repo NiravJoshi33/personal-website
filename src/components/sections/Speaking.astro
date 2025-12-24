@@ -1,47 +1,43 @@
 ---
 import Section from "../Section.astro"
 
-import { work } from "@cv"
+import { speaking } from "@cv"
 ---
 
-<Section title="Work Experience">
+<Section title="Speaking & Workshops">
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Present"
+      speaking?.map(
+        ({ title, institution, location, date, image }) => {
+          const eventDate = new Date(date)
+          const formattedDate = eventDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })
 
           return (
             <li>
               <article>
                 <header>
                   <div>
-                    <h3>
-                      {name}
-                    </h3>
-                    <h4>{position}</h4>
+                    <h3>{title}</h3>
+                    <h4>{institution}</h4>
+                    <p class="location">{location}</p>
                   </div>
-
                   <div>
                     <time 
-                      datetime={startDate}
-                      data-title={startDate}>
-                        {startYear}
-                    </time>
-                    {" - "}
-                    <time 
-                      datetime={endDate}
-                      data-title={endDate}>
-                        {endYear}
+                      datetime={date}
+                      data-title={date}>
+                      {formattedDate}
                     </time>
                   </div>
                 </header>
-
-                <footer>
-                  <p>{summary}</p>
-                </footer>
+                {image && (
+                  <figure>
+                    <img src={image} alt={`${title} at ${institution}`} />
+                  </figure>
+                )}
               </article>
             </li>
           )
@@ -61,26 +57,26 @@ import { work } from "@cv"
   article h3 {
     font-weight: 500;
     color: #2e2f31;
-  }
-
-  article a {
-    color: #2e2f31;
-  }
-
-  article a:hover {
-    text-decoration: underline;
+    margin-bottom: 4px;
   }
 
   article h4 {
     color: #2e2f31;
     font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  article .location {
+    color: #2e2f31;
+    font-size: 0.85rem;
+    margin-bottom: 0;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
   }
 
   time {
@@ -119,9 +115,29 @@ import { work } from "@cv"
     position: relative;
   }
 
+  figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2e2f31;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px;
+  }
+
   @media (width <= 700px) {
     time {
       text-align: right;
     }
+
+    header {
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 </style>
+

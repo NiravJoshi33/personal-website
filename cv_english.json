@@ -5,7 +5,7 @@
     "image": "/me.jpg",
     "email": "niravjoshi3000@gmail.com",
     "url": "https://niravjoshi.dev",
-    "summary": "A self-taught Full-Stack Developer with more than 2 years of experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Passionate about building simple, efficient systems that make a difference.",
+    "summary": "A self-taught Full-Stack Developer with more than 2 years of experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Active technical educator on Solana and Web3, sharing insights through workshops and video content. Passionate about building simple, efficient systems that make a difference.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -224,6 +224,33 @@
     {
       "name": "AI & Machine Learning",
       "keywords": ["Artificial Intelligence", "Innovation"]
+    }
+  ],
+  "educationalContent": [
+    {
+      "name": "Introduction to Blockchain",
+      "description": "The WHY behind blockchain and how it works.",
+      "highlights": ["Education", "Blockchain", "Video Tutorials"],
+      "url": "https://www.youtube.com/watch?v=mIjYBwyMn7w",
+      "type": "YouTube"
+    }
+  ],
+  "speaking": [
+    {
+      "title": "Introduction to Blockchain and Solana",
+      "institution": "Karnavati University",
+      "location": "Gandhinagar",
+      "date": "2025-12-23",
+      "type": "Workshop",
+      "image": "/workshop-karnavati.jpg"
+    },
+    {
+      "title": "Introdution to Blockchain and Web3",
+      "institution": "Dhirubhai Ambani University",
+      "location": "Gandhinagar",
+      "date": "2025-11-16",
+      "type": "Workshop",
+      "image": "/workshop-dhirubhai.jpg"
     }
   ],
   "references": []
