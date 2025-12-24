@@ -233,6 +233,20 @@
       "highlights": ["Education", "Blockchain", "Video Tutorials"],
       "url": "https://www.youtube.com/watch?v=mIjYBwyMn7w",
       "type": "YouTube"
+    },
+    {
+      "name": "Beyond GTP: Use HuggingFace Models with GitHub Copilot",
+      "description": "Learn how to use HuggingFace models with GitHub Copilot to create your own AI-powered applications.",
+      "highlights": ["Education", "AI", "GitHub Copilot", "HuggingFace"],
+      "url": "https://blog.niravjoshi.dev/blog/beyond-gpt-using-github-copilot-with-any-hf-model/",
+      "type": "Blog"
+    },
+    {
+      "name": "Deploying React Router v7 Apps to Vercel: A Quick Guide",
+      "description": "Learn how to deploy React Router v7 apps to Vercel in a few simple steps.",
+      "highlights": ["Education", "React Router", "Vercel"],
+      "url": "https://blog.niravjoshi.dev/blog/deploy-rr7-app-on-vercel/",
+      "type": "Blog"
     }
   ],
   "speaking": [
