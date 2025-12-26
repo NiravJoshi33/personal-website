@@ -5,7 +5,7 @@
     "image": "/me.jpg",
     "email": "niravjoshi3000@gmail.com",
     "url": "https://niravjoshi.dev",
-    "summary": "A self-taught Full-Stack Developer with more than 2 years of experience in Web3, AI, and blockchain technologies. Transitioned from mechanical engineering to software development, bringing a unique problem-solving perspective. Active technical educator on Solana and Web3, sharing insights through workshops and video content. Passionate about building simple, efficient systems that make a difference.",
+    "summary": "I am a self-taught Blockchain Developer with unique blend of 6 years of experience in designing robotic systems and 2 years of experience in fullstack development. I am known for high agency and ability to take intiatives and get things done.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -37,14 +37,14 @@
     {
       "name": "SeedPay",
       "isActive": true,
-      "description": "Payments Protocol for BitTorrent Networks. Seeders earn crypto for seeding content while leechers pay using stablecoins or ratio credits.",
+      "description": "A payment protocol for BitTorrent networks. People who share files earn stablecoins, while those who download can pay with digital currency or use credits from their sharing ratio.",
       "highlights": ["BitTorrent", "Cryptocurrency", "Payments Protocol"],
       "github": "https://github.com/NiravJoshi33/seedpay"
     },
     {
       "name": "Testship",
       "isActive": true,
-      "description": "CLI tool for testing Anchor Programs without writing tests. Parses IDL and generates an interactive UI to run transactions with automatic PDA calculations.",
+      "description": "A command-line tool that makes testing blockchain programs easier. Instead of writing test code, you can use a simple interface to test your programs and run transactions.",
       "highlights": ["Anchor Programs", "Solana", "CLI Tool", "Testing"],
       "url": "https://www.testship.xyz/",
       "github": "https://github.com/blockchain-hq/testship",
@@ -53,7 +53,7 @@
     {
       "name": "x402test",
       "isActive": true,
-      "description": "Testing infrastructure for x402 compatible clients and servers. Includes a testing library and mock server for rapid development.",
+      "description": "Tools for testing payment systems. Provides a testing library and a fake server to help developers build and test payment features quickly.",
       "highlights": ["x402 Protocol", "Testing Library", "Mock Server"],
       "url": "https://x402test.testship.xyz/",
       "github": "https://github.com/blockchain-hq/x402test"
@@ -61,14 +61,14 @@
     {
       "name": "SMBMarket",
       "isActive": true,
-      "description": "Aggregator & Dashboard for Business Acquisition Marketplace",
+      "description": "A platform that collects and displays businesses available for purchase. Includes a dashboard to browse and manage business listings.",
       "highlights": ["Full-Stack Development", "Dashboard", "AI"],
       "url": "https://smbmarket.com/"
     },
     {
       "name": "BlockchainHQ",
       "isActive": true,
-      "description": "Homebase for Web3 Builders. It's a unified platform that accelerates the builder's web3 journey by aggregating all the learning and earning opportunities in one place.",
+      "description": "A central platform for blockchain developers. Brings together learning resources, job opportunities, and tools to help developers grow in the blockchain space.",
       "highlights": ["Web3", "Platform Development", "Leadership"],
       "url": "https://blockchainhq.xyz/",
       "github": "https://github.com/blockchain-hq"
@@ -76,7 +76,7 @@
     {
       "name": "Pocket-Nodes",
       "isActive": true,
-      "description": "n8n nodes for integrating x402 compatibility into existing workflows. Includes client, server, wallet, and mock server nodes.",
+      "description": "Add-on components for automation tools that enable payment features in existing workflows. Works with popular automation platforms to add payment capabilities.",
       "highlights": [
         "n8n",
         "x402 Protocol",
@@ -89,7 +89,7 @@
     {
       "name": "solana-test-wallets",
       "isActive": true,
-      "description": "Lightweight wallet management library for Solana testing. Simplifies wallet creation, funding, and token management for local development.",
+      "description": "A simple library for managing test wallets on Solana blockchain. Makes it easy to create wallets, add test funds, and manage tokens during development.",
       "highlights": ["Solana", "Testing", "Wallet Management", "TypeScript"],
       "github": "https://github.com/blockchain-hq/solana-test-wallets",
       "npm": "https://www.npmjs.com/package/solana-test-wallets"
@@ -109,8 +109,14 @@
       "position": "Software Developer - Product R&D",
       "startDate": "2024-03-01",
       "endDate": null,
-      "summary": "Drive innovation as a Product R&D Software Developer, specializing in developing non-traditional solutions across diverse technological domains. Conceptualize, build, and deploy innovative products that solve real-world problems.",
-      "highlights": ["Product Development", "R&D", "Full-Stack Development"]
+      "summary": "Lead development of fullstack business aggregation platform for a client. Worked on multiple internal projects involving fullstack development, AI integration and Web Scraping.",
+      "highlights": [
+        "Full-Stack Development",
+        "AI Integration",
+        "Web Scraping",
+        "Product Development",
+        "R&D"
+      ]
     },
     {
       "name": "CodeCrunch Techlabs",
@@ -129,79 +135,74 @@
       "highlights": ["Product Design", "Robotics", "Project Management"]
     }
   ],
-  "skills": [
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend", "Backend", "Fullstack"]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Advanced",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Advanced",
-      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
-    },
-    {
-      "name": "PostgreSQL",
-      "level": "Advanced",
-      "keywords": ["Database", "SQL", "Backend"]
-    },
-    {
-      "name": "Python",
-      "level": "Advanced",
-      "keywords": ["AI", "Machine Learning", "Data Science"]
-    },
-    {
-      "name": "Svelte",
-      "level": "Beginner",
-      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "Rust",
-      "level": "Beginner",
-      "keywords": ["Blockchain", "Smart Contracts", "Rust"]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "Solana",
-      "level": "Advanced",
-      "keywords": ["Blockchain", "Smart Contracts", "Solana"]
-    }
-  ],
+  "skills": {
+    "Frontend": [
+      {
+        "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "TypeScript",
+        "level": "Advanced"
+      },
+      {
+        "name": "React",
+        "level": "Advanced"
+      },
+      {
+        "name": "Next.js",
+        "level": "Advanced"
+      },
+      {
+        "name": "Tailwind",
+        "level": "Advanced"
+      },
+      {
+        "name": "Svelte",
+        "level": "Beginner"
+      },
+      {
+        "name": "Astro",
+        "level": "Beginner"
+      }
+    ],
+    "Backend": [
+      {
+        "name": "Node",
+        "level": "Advanced"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Advanced"
+      },
+      {
+        "name": "Python",
+        "level": "Advanced"
+      },
+      {
+        "name": "Express",
+        "level": "Advanced"
+      },
+      {
+        "name": "FastAPI",
+        "level": "Beginner"
+      },
+      {
+        "name": "Hono",
+        "level": "Beginner"
+      }
+    ],
+    "Blockchain": [
+      {
+        "name": "Solana",
+        "level": "Advanced"
+      },
+      {
+        "name": "Rust",
+        "level": "Beginner"
+      }
+    ]
+  },
   "languages": [
     {
       "language": "English",

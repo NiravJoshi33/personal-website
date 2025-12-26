@@ -4,24 +4,56 @@ import { skills } from "@cv"
 ---
 
 <Section title="Skills">
-  <ul>
+  <div class="skills-container">
     {
-      skills.map(({ name }) => {
+      Object.entries(skills).map(([category, categorySkills]) => {
         return (
-          <li>
-            <span>{name}</span>
-          </li>
+          <div class="category">
+            <h3>{category}</h3>
+            <ul>
+              {
+                categorySkills.map(({ name }) => {
+                  return (
+                    <li>
+                      <span>{name}</span>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
         )
       })
     }
-  </ul>
+  </div>
 </Section>
 
 <style>
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .category h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2e2f31;
+    margin-bottom: 4px;
+  }
+
   ul {
     display: inline-flex;
     gap: 8px;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 
   li {
